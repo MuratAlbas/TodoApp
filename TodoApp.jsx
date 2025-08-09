@@ -33,10 +33,13 @@ const TodoApp = () => {
       <ul className="task-list">
         {tasks.map((task) => (
 
-          <li key={task.id} style={{ textDecoration: task.completed ? "line-through" : "none" }}> {task.text}
+          <li key={task.id} className={task.completed ? "completed" : ""}> {task.text}
 
-            <button onClick={() => handleDone(task.id)}>
-              {task.completed ? "Undo" : "Done"}
+            <button 
+              onClick={() => handleDone(task.id)}
+              className={`done ${task.completed ? "undo" : ""}`}>
+
+            {task.completed ? "Undo" : "Done"}
             </button>
 
           </li>
