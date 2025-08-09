@@ -1,0 +1,48 @@
+body{
+    background-color: wheat;
+}
+.todo-container {
+    font-family: Cambria, Cochin;
+    max-width: 600px;
+    margin: 150px auto;
+    padding: 100px;
+    border: 10px solid grey;
+    border-radius: 60px;
+    box-shadow: 0 20px 8px darkgrey;
+    background: rgb(231, 226, 226);
+    font-size: 35px;
+  }
+  
+  .title {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+  
+  .add-button {
+    background-color: rgb(103, 150, 103);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .task-list {
+    list-style-type: square;
+    color: rgb(49, 159, 95);
+    padding: 10px;
+  }
